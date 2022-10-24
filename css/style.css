@@ -1,0 +1,191 @@
+:root{
+    --fuenteheading:'Montserrat', sans-serif;
+    --fuenteparrafos:'Montserrat', sans-serif;
+
+    --primario: #d5b26a;
+    --blanco: #ffff;
+    --negro: #000;
+    --gris: #e1e1e1;
+    --azul: #00579d ; 
+
+}
+
+html{
+    box-sizing: border-box; /* para que el ancho de el html no afete el de los elementos */
+    font-size: 62.5%;  /*para que 1 rem = 10px */
+}
+*,*::before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 1.8; /* altura entre letras */
+}
+
+/* GLOBALES  */
+
+.contenedor{
+    max-width: 180rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{max-width: 100% ;}
+
+
+/*  UTILIDADES  */
+.no-margin{
+    margin: 0;
+}
+.no-pading{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+/*   header   */
+
+
+.logogrande {
+
+    width: 40rem;
+    margin: 10rem auto 5rem auto;
+
+}
+
+@media(min-width:768px){
+    .navegacion{
+        display: flex;
+        gap: 4rem;
+    }
+}
+@media(min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center; 
+    }
+}
+.navegacion{
+    padding: 2rem;
+}
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size:3.2rem;
+    color: var(--azul);
+    font-weight: 500;
+}
+
+.navegacion a:hover{
+    background-color: var(--primario) ;
+    padding: 0.7rem 1.5rem;
+    color:var(--negro);
+}
+
+
+/*  MAIN  */ 
+
+.home1{
+    width:80rem ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+
+
+
+
+/* FOOTER */ 
+
+.footer-contenedor{
+    background-color:var(--primario);
+    width: 100vw;
+    display: flex;
+
+}
+
+.footer-contenedor-chico{
+    display: flex;
+}
+.logochico {
+    width: 30%;
+}
+
+.footer-letras{
+    margin: 0;
+    color: var(--blanco);
+}
+
+.iconos{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  CONTACTO  
+
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -4rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo{
+     display: flex;
+     margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem; /* el lebel siempre tenga 9rem
+    padding-right: 1rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__texarea{
+    height: 20rem;
+    width: 100%;
+} 
