@@ -360,8 +360,8 @@ footer {
 
 .boton--primario {
     background-color: var(--primario);
-    border-radius: 5rem;
-    width: 90rem;
+    width: 59.5rem;
+    border-radius: 1px 1px 17px 17px;
 }
 
 .Mira {
@@ -501,13 +501,14 @@ footer {
 
 .letras-azul-contacto {
     font-family: var(--fuenteheading);
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--azul);
+    box-shadow: 0px 3px 0px 0px var(--primario);
 }
 
-.parrafo-contacto {
+.parrafo-contacto  {
     font-family: var(--fuenteheading);
     font-size: 2.3rem;
     font-weight: 600;
@@ -529,16 +530,38 @@ footer {
     border-radius: 20px;
     height: 6rem;
     width: 60rem;
+    outline: none;
 }
-.campo__texarea{
+.div_campo__texarea{
     border: 4px solid var(--primario);
     border-radius: 20px;
     height: 50rem;
     width: 60rem;
 }
-.contenedor-letras-azul{
-    margin-left: 12rem;
-    
+.campo__texarea{
+    border: none;
+    border-radius: 13px 14px 0px 0px;
+    width: 59.2rem;
+    height: 42rem;
+    outline: none;
+}
+
+.letras-azul-contacto-padre{
+    margin-bottom: 8rem;
+    width: 56rem;
+    margin-left: 28rem;
+}
+.linea-contacto{
+    box-shadow: 0px 3px 0px 0px var(--primario);
+    width: 48rem;
+    margin-bottom: 8rem;
+    margin-left: 14rem;
+}
+.contatos-abuelo{
+    display: flex;
+}
+.texto-parrafo-contacto{
+    margin-bottom: 8rem;
 }
 /*
 .contacto-bg{
