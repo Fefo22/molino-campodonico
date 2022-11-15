@@ -8,6 +8,7 @@
     --fuenteheading: 'Montserrat', sans-serif;
     --fuenteparrafos: 'Montserrat', sans-serif;
     --fuentesecundaria: 'Amaranth', sans-serif;
+    --funteprueba: 'goudysans-lt-bt-light-italic', sans-serif;
 
     --primario: #d5b26a;
     --blanco: #ffff;
@@ -126,14 +127,18 @@ img {
 input.lupa {
     width: 26px;
     height: 26px;
-    background-image: url(/img/search.png);
     background-color: transparent;
     color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    left: 24.2%
 }
+.search-icono{
+    position:relative;
 
+}
 ::placeholder {
     color: var(--azul);
     font-weight: 700;
@@ -255,6 +260,34 @@ input.lupa {
     color: var(--azul);
 }
 
+/* HOVER SERVICIOS  */
+
+.contenedorH figure{
+   position:relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.contenedorH figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.contenedorH figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(123, 94, 0, 0.512);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.contenedorH figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* FOOTER */
 
@@ -347,17 +380,24 @@ footer {
     color: var(--blanco);
     text-align: center;
     padding: 1rem 3rem;
-    font-size: 4rem;
+    font-size: 3.4rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
     border: none;
 }
-
+.boton-p{
+    padding: 1.2rem 3rem;
+}
 .boton:hover {
     cursor: pointer;
 }
 
+.boton--secundario{
+    background-color: var(--primario);
+    width: 59.5rem;
+    border-radius: 4rem;
+}
 .boton--primario {
     background-color: var(--primario);
     width: 59.5rem;
@@ -391,7 +431,7 @@ footer {
     background-color: var(--kk);
     padding: 1rem;
     position: absolute;
-    transform: translate(-849px, 450px);
+    transform: translate(-630px, 450px);
     border: 1px solid var(--kk);
     padding: 0rem 4rem;
     margin-top: 2rem;
@@ -400,7 +440,7 @@ footer {
 .texto-harinas {
     position: absolute;
     display: flex;
-    transform: translate(1132px, 270px);
+    transform: translate(940px, 270px);
     flex-direction: column;
     align-items: center;
 }
@@ -409,8 +449,8 @@ footer {
 
 .contenedor-polenta {
     position: absolute;
-    top: 46%;
-    left: 40%;
+    top: 71%;
+    left: 32%;
     transform: translate(-65%, -35%);
 }
 
@@ -438,7 +478,7 @@ footer {
     font-size: 7.5rem;
     color: var(--primario);
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 .parrafo-poleta1,
@@ -454,7 +494,8 @@ footer {
 }
 
 .img-polenta {
-    padding: 0px 200px 0px 0px;
+    width: 53rem;
+    margin-right: 10rem;
 }
 
 /* COMERCIO EXTERIOR  */
@@ -462,7 +503,7 @@ footer {
 
 .letras-doradas {
     font-family: var(--fuenteparrafos);
-    font-size: 7rem;
+    font-size: 6rem;
     color: var(--primario);
     font-weight: 700;
     box-shadow: 0px 3px 0px 0px;
@@ -487,8 +528,21 @@ footer {
     margin-bottom: 5rem;
 }
 
-.contacto-info {
-    margin-bottom: 3rem;
+.info-exterior{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0rem 10rem 0rem;
+}
+.linea-exterior{
+    margin-bottom: 4rem;
+    box-shadow: 0px 3px 0px 0px var(--primario);
+    width: 48rem;
+}
+.contendor-contacto-exterior{
+    width: 50rem;
+}
+.icono-sobre{
+    margin-top: -1rem
 }
 
 /*  CONTACTO   */
@@ -508,7 +562,7 @@ footer {
     box-shadow: 0px 3px 0px 0px var(--primario);
 }
 
-.parrafo-contacto  {
+.parrafo-contacto {
     font-family: var(--fuenteheading);
     font-size: 2.3rem;
     font-weight: 600;
@@ -520,25 +574,31 @@ footer {
     font-size: 3rem;
     font-weight: 500;
     color: #7a7777;
+    margin-top: 6.6rem;
 }
-.contenedor-contacto{
+
+.contenedor-contacto {
     display: flex;
     gap: 10rem;
+    margin: 0rem -26rem 0rem 0rem;
 }
-.campo__field{
+
+.campo__field {
     border: 4px solid var(--primario);
     border-radius: 20px;
     height: 6rem;
     width: 60rem;
     outline: none;
 }
-.div_campo__texarea{
+
+.div_campo__texarea {
     border: 4px solid var(--primario);
     border-radius: 20px;
     height: 50rem;
     width: 60rem;
 }
-.campo__texarea{
+
+.campo__texarea {
     border: none;
     border-radius: 13px 14px 0px 0px;
     width: 59.2rem;
@@ -546,51 +606,371 @@ footer {
     outline: none;
 }
 
-.letras-azul-contacto-padre{
+.letras-azul-contacto-padre {
     margin-bottom: 8rem;
-    width: 56rem;
-    margin-left: 28rem;
-}
-.linea-contacto{
-    box-shadow: 0px 3px 0px 0px var(--primario);
-    width: 48rem;
-    margin-bottom: 8rem;
-    margin-left: 14rem;
-}
-.contatos-abuelo{
-    display: flex;
-}
-.texto-parrafo-contacto{
-    margin-bottom: 8rem;
-}
-/*
-.contacto-bg{
-    background-image: url(../img/contacto.jpg);
-    height: 40rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    width: 60rem;
+    margin-left: 8rem;
 }
 
-.formulario{
-    background-color: var(--blanco);
-    margin: -4rem auto 0 auto;
-    width: 95%;
-    padding: 5rem;
+.linea-contacto {
+    box-shadow: 0px 3px 0px 0px var(--primario);
+    width: 59rem;
+    margin-bottom: 8rem;
 }
-.campo{
-     display: flex;
-     margin-bottom: 2rem;
+
+.contatos-abuelo {
+    display: flex;
+    justify-content: center;
 }
-.campo__label{
-    flex: 0 0 9rem; /* el lebel siempre tenga 9rem
-    padding-right: 1rem;
+
+.texto-parrafo-contacto {
+    margin-bottom: 8rem;
 }
-.campo__field{
-    flex: 1;
-    border: 1px solid var(--gris);
+
+.margin-b-contacto{
+    margin-bottom: 3rem;
 }
-.campo__texarea{
-    height: 20rem;
-    width: 100%;
-} 
+.contendeor-2{
+    margin-left: 10rem;
+}
+.parrafo-contacto-comun{
+    font-family: var(--fuenteparrafos);
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+/*  RRHH   */
+
+.rrhh {
+    box-shadow: none;
+    margin-bottom: -43px;
+    padding: 2rem 0rem;
+}
+
+.parrafo-poleta1 {
+    color: var(--negro);
+}
+
+.punto {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.contenedor-lista {
+    display: flex;
+}
+
+.contacto-info {
+    margin-left: 15rem;
+}
+
+.somoscampodonico {
+    font-size: 3rem;
+    background-color: white;
+    padding: 0.7rem 0rem;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.rrhh-dorada {
+    box-shadow: none;
+    margin-bottom: -43px;
+}
+
+.parrafo-rrhh {
+    font-family: var(--fuenteparrafos);
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.linea {
+    box-shadow: 0px -3px 0px 0px var(--primario);
+}
+.texto-rrhh{
+    margin: 4rem 0rem 17rem;
+}
+.sobre-campodonico-rrhh{
+    margin: 10rem 10rem 0rem;
+}
+.punto-rrhh{
+    margin: -1.2rem 3rem 0rem 0rem;
+    font-size: 5rem;
+    line-height: 1;
+}
+.H-RRHH{
+    line-height: 1.4;
+}
+/* CONTROL DE CALIDAD */
+
+.control-texto{
+    font-weight: 600;
+    margin: 4rem 0rem;
+}
+.bolt{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.img-certificado{
+    margin: 10rem 2.5rem;
+    width: 40rem;
+}
+.laboratorio{
+    margin-top: 10rem;
+}
+.parrafo-control{
+    text-align: start;
+    margin-top: 5rem;
+}
+.m-control{
+    margin-bottom: 7rem;
+}
+.texto-control-n-m{
+    margin-top: 16px;
+}
+.texto-control-M{
+    margin-top: 2.2rem;
+}
+.margin-l-contro{
+    margin-left: 10rem;
+}
+.inocuidad-mas{
+    font-size: 6.6rem;
+}
+.contacto-info-control{
+    margin-left: 12rem;
+}
+/* BALANCEADOS */
+
+.contendedor-balanceado{
+    left: 48%;
+}
+.balanceado-texto{
+    margin-top: 0px;
+}
+.parrafo-balanceado{
+    font-family: var(--fuenteparrafos);
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 2.1rem;
+}
+.cont-balanceado{
+    margin-top: 10rem;
+}
+.bal-texto{
+    font-weight: 600;
+    margin-top: 3rem;
+}
+.y{
+    display: flex;
+    column-gap: 25px;
+}
+.bal-texto-doble{
+    margin-left: 11rem;
+}
+.max{
+    width: 27rem;
+}
+.lista-bal{
+    margin-top: 10rem;
+}
+.mar-bal{
+    margin: 0rem 0rem;
+}
+.contenedor-punto-texto{
+    display: flex;
+}
+.bal-titulo{
+    font-size: 12rem;
+}
+.punto2{
+    margin: -6.6rem 2rem 0rem 0rem;
+    font-size: 7rem;
+}
+
+/* NUESTRA EMPRESA */
+
+.parrafo-empresa{
+    font-family: var(--fuenteheading);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.punto-empresa{
+    margin: -3.6rem 2rem 0rem 0rem;
+    font-size: 7rem;
+    line-height: 0.6;
+}
+.lista-empresa{
+    margin-top: 3rem;
+}
+.empresa-texto{
+    font-weight: 600;
+    margin: 2rem 0rem 4rem 0rem;
+    font-size: 4rem;
+    color: var(--azul);
+}
+.margin-empresa{
+    margin-left: 12rem;
+}
+.img-historia{
+    max-height: 28vw;
+}
+.empresa-titulos{
+    margin: 8rem 0rem -2rem 0rem;
+}
+.no-w{
+    font-weight: 400;
+}
+.datos{
+    font-size: 5.3rem;
+}
+.margin-b{
+    margin: 3rem 0rem;
+}
+.div-datos{
+    margin-top: 1rem;
+}
+.programa-identidad{
+    margin-right: 68rem;
+}
+.datos2{
+    font-size: 4.3rem;
+}
+.boton--terciario{
+    background-color: var(--primario);
+    width: 76.5rem;
+    border-radius: 4rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.margin-t{
+    margin: 5rem 0rem;
+}
+.empresa-m{
+    margin-left: 7.2rem;
+}
+.dorada-agro{
+    font-size: 5rem;
+    font-weight: 600;
+}
+.ya{
+    display: flex;
+    gap: 1.5rem;
+}
+/*AGRONEGOCIOS */
+
+.margin-agro{
+    margin-left: 7rem;
+}
+.punto-agro{
+    box-shadow: none;
+    margin: -2.6rem 1rem 0rem 0rem;
+}
+.lista-agro{
+    line-height: 1.2;
+    margin-top: 5rem;
+}
+.margin-agro-abajo{
+    margin-left: 27.6rem;
+}
+.contendedor-agronegocios{
+    left: 43%;
+}
+.contendedor-agronegocios-main{
+    margin-top: 8rem;
+}
+.soja-margin{
+    margin-left: 27rem;
+}
+
+/* PREMEZCLA */
+
+.video{
+    margin-top: 2.2rem;
+}
+.img-premezcla{
+    width: 27rem;
+    height: 38rem;
+}
+.img-premezcla2 {
+    width: 27rem;
+    height: 37rem;
+    margin-top: 1rem;
+}
+.elementos-derecha{
+    margin-left: 11rem;
+}
+.premezcla-texto{
+    font-size: 2rem;
+}
+.contenedor-premezcla-doradas{
+    margin-top: 5rem;
+}
+.elementos-derecha-queso{
+    margin-left: 6rem;
+}
+.elementos-derecha-semi{
+    margin-left: 21rem;
+}
+
+/*  HARINAS  */
+
+.img-harinas{
+    width: 27rem;
+    height: 25rem;
+}
+.img-herina-organica{
+    height: 25.5rem;
+    width: 25rem;
+    margin-left: 1.6rem;
+}
+.parrafo-harinas{
+    width: 25rem;
+    text-align: center;
+}
+.contendeor-organicas{
+    margin-left: 9.5rem;
+}
+.contenedor-boton-harinas{
+    display: flex;
+    width: 120rem;
+}
+.boton-harinas1 , .boton-harinas2{
+    font-size: 2.5rem;
+    background-color: var(--azul);
+    width: 60rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+    padding: 2.5rem 3rem;
+    position: relative;
+}
+.boton-harinas2{
+    border-radius: 0rem 2rem 2rem 0rem;
+}
+.contenedor-texto-harias{
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-65%, -35%);
+}
+.conenedor-botones2{
+    margin-top: -3.8rem;
+}
+.triangulo-equilatero-bottom1{
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid var(--blanco) ;
+    position:absolute;
+    left: 30%;
+    top: 87.63%;
+}
+.triangulo-equilatero-bottom2{
+    left: 68%;
+}
+.img-harinas-familia{
+    width: 26rem;
+    height: 30rem;
+}
