@@ -283,7 +283,7 @@ footer {
     justify-content: space-around;
     height: 12vh;
     align-items: center;
-    width: 100vw;
+    width: 99vw;
 }
 
 .footer-contenedor {
@@ -532,12 +532,6 @@ footer {
 }
 
 /*  CONTACTO   */
-
-.contenedor-exterior {
-    max-width: 120rem;
-    display: flex;
-    flex-direction: column;
-}
 
 .letras-azul-contacto {
     font-family: var(--fuenteheading);
@@ -977,6 +971,11 @@ footer {
 /* Responsive */
 
 /* Desktop */
+@media (min-width: 1024px){
+    .dorada-agro-mobil {
+        display: none;
+    }
+}
 @media (max-width: 1440px){
     .texto-harinas {
         left: 824px;
@@ -1037,6 +1036,34 @@ footer {
     }
     footer {
         width: 99vw;
+    }
+    .dorada-agro-desktop {
+        display: none;
+    }
+    .contenedor-boton-harinas {
+        flex-direction: column;
+    }
+    .contacto-info {
+        margin: 0px;
+    }
+    .y {
+        flex-direction: column;
+    }
+    .contendedor-agronegocios-main {
+        display: flex;
+    flex-direction: column;
+    }
+    .contenedor-boton-harinas {
+        width: 60rem;
+    }
+    .productos {
+        font-size: 8rem;
+    }
+    .img-productos{
+        height: 50rem;
+    }
+    .rrhh-dorada {
+        margin: 0px;
     }
     
 }
