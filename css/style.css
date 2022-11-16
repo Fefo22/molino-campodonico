@@ -104,19 +104,6 @@ img {
 
 }
 
-@media(min-width:768px) {
-    .navegacion {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .barra {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
 .buscador {
     border-bottom: 2.5px solid var(--azul);
     border-top: none;
@@ -179,7 +166,7 @@ input.lupa {
     background-image: url(/img/BANNER-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 99vw;
+    width: 100vw;
     height: 60rem;
 }
 
@@ -204,7 +191,7 @@ input.lupa {
 
 .banner2 {
     /* background-image: url(/img/BANNER-2.png);*/
-    width: 99vw;
+    width: 100vw;
     height: 70rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,8 +255,8 @@ input.lupa {
     overflow: hidden;
 }
 .contenedorH figure img{
-    width: 100%;
-    height: 100%;
+    width: 16rem;
+    height: 16rem;
     transition: all 400ms ease-out;
     will-change: transform;
 }
@@ -296,7 +283,7 @@ footer {
     justify-content: space-around;
     height: 12vh;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
 }
 
 .footer-contenedor {
@@ -419,30 +406,29 @@ footer {
     text-shadow: 5px 5px 10px rgb(85, 84, 84);
 }
 
-.texto-harinas {
-    line-height: 8rem;
-}
 
 .boton-conocelas {
-    border: 1px solid;
     border-radius: 10px;
     color: var(--blanco);
     font-size: 3rem;
     background-color: var(--kk);
-    padding: 1rem;
-    position: absolute;
-    transform: translate(-630px, 450px);
+    position: relative;
     border: 1px solid var(--kk);
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
+    left: 1124px;
+    bottom: 250px;
     margin-top: 2rem;
 }
 
 .texto-harinas {
+    line-height: 8rem;
     position: absolute;
     display: flex;
-    transform: translate(940px, 270px);
     flex-direction: column;
     align-items: center;
+    left: 1010px;
+    top: 1589px;
+    max-width: 53rem;
 }
 
 /* POLENTA */
@@ -973,4 +959,141 @@ footer {
 .img-harinas-familia{
     width: 26rem;
     height: 30rem;
+}
+.navegacion {
+    display: flex;
+    gap: 2rem;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconos-hover {
+    width: 16rem; 
+    height: 16rem
+}
+/* Responsive */
+@media (max-width: 1440px){
+    .texto-harinas {
+        left: 824px;
+    }
+    .boton-conocelas {
+        left: 962px;
+        bottom: 255px;    
+    }
+}
+@media (max-width: 768px){
+    .barra {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .navegacion-enlace1 {
+        box-shadow: none;
+    }
+    .home1 {
+        width: 100vw;
+        height: 40rem;
+    }
+    .texto-harinas {
+        transform: none;
+        left: 415px;
+        top: 1410px;
+    }
+    .Mira {
+        font-size: 3rem
+    }
+    .harinas {
+        font-size: 6rem;
+        line-height: 30px;
+    }
+    .banner2 {
+        width: 100vw;
+        height: 100%;
+    }
+    .boton-conocelas {
+        margin: 0;
+        position: relative;
+        left: 452px;
+        bottom: 101px;
+    }
+    .sobre-campodonico {
+        margin: 0px 0px 40px 10px;
+    }
+    .iconos-hover {
+        width: 10rem;
+        height: 10rem;
+    }
+    .contenedorH figure img {
+        width: 10rem;
+        height: 10rem;
+    }
+    footer {
+        width: 100vw;
+    }
+    
+}
+@media (max-width: 425px){
+    .logogrande {
+        width: 35rem;
+    }
+    .home1 {
+        width: 100%;
+        height: 25rem;
+    }
+    .texto-harinas {
+        left: 0px;
+        top: 1390px;
+    }
+    .titulo-empresa {
+        font-size: 2rem;
+    }
+    footer {
+        width: 100vw;
+        height: auto;
+    }
+    .footer-contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+    .contenedor-servicios {
+        flex-direction: column;
+        margin: 0px 0px 50px 0px
+    }
+    .boton-conocelas {
+        font-size: 1.5rem;
+        left: 232px;
+        bottom: 55px
+    }
+    .Mira {
+        font-size: 2rem;
+    }
+    .harinas {
+        font-size: 3rem;
+        line-height: 0px
+    }
+    .texto-harinas {
+        top: 1280px;
+        left: 210px
+    }
+    .sobre-campodonico {
+        font-size: 2rem;
+    }
+    .letras-icono {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .iconos-hover {
+        width: 8rem;
+        height: 8rem;
+    }
+    .contenedorH figure img {
+        width: 8rem;
+        height: 8rem;
+        
+    }
 }
