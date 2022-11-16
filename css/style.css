@@ -975,6 +975,8 @@ footer {
     height: 16rem
 }
 /* Responsive */
+
+/* Desktop */
 @media (max-width: 1440px){
     .texto-harinas {
         left: 824px;
@@ -984,6 +986,7 @@ footer {
         bottom: 255px;    
     }
 }
+/* Tablet */
 @media (max-width: 768px){
     .barra {
         flex-direction: column;
@@ -1033,10 +1036,11 @@ footer {
         height: 10rem;
     }
     footer {
-        width: 100vw;
+        width: 99vw;
     }
     
 }
+/* Mobil */
 @media (max-width: 425px){
     .logogrande {
         width: 35rem;
