@@ -333,9 +333,8 @@ footer {
 
 .contenedor-texto {
     position: absolute;
-    top: 70%;
-    left: 40%;
-    transform: translate(-65%, -35%);
+    top: 51%;
+    left: 19%;
 }
 
 .nuestros {
@@ -497,6 +496,9 @@ footer {
 .img-polenta {
     width: 53rem;
     margin-right: 10rem;
+}
+.contenedor-hijo-polenta{
+    display: flex;
 }
 
 /* COMERCIO EXTERIOR  */
@@ -854,7 +856,7 @@ footer {
 }
 
 .marg-datos {
-    margin-left: 18rem;
+    margin-left: 8.4rem;
 }
 
 .lista-empresa {
@@ -968,9 +970,17 @@ footer {
     margin-top: 8rem;
 }
 
+/*------ SOJA -------*/
+
 .soja-margin {
     margin-left: 27rem;
 }
+
+.soja-resp {
+    display: none;
+}
+
+
 
 /* PREMEZCLA */
 
@@ -1007,6 +1017,13 @@ footer {
 
 .elementos-derecha-semi {
     margin-left: 21rem;
+}
+
+.bolt-premezcla {
+    font-weight: 700;
+}
+.contenedor-premezcla-todo{
+    display: flex;
 }
 
 /*  HARINAS  */
@@ -1104,7 +1121,7 @@ footer {
     height: 16rem
 }
 
-/* ------- Responsive ----------*/
+/* ----------------- Responsive -----------------*/
 
 @media (max-width: 1440px) {
     .texto-harinas {
@@ -1119,6 +1136,50 @@ footer {
     .margin-agro-r {
         margin: 0rem;
     }
+
+    /*-------- Premezcla ---------*/
+
+    .elementos-derecha {
+        margin-left: 3rem;
+        max-width: 80rem;
+    }
+
+    .elementos-derecha-queso {
+        margin-left: 0rem;
+    }
+
+    .elementos-derecha {
+        margin-left: 5rem;
+    }
+
+    .elementos-derecha-semi {
+        margin-left: 15rem;
+    }
+
+    /*-------- RRHH ---------*/
+    .texto-rrhh-r {
+        margin: 3rem 0rem 4rem;
+    }
+    .contendor-doradas-rrhh {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .y-r-rrhh {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .y-r-rrhh-2 {
+        justify-content: center;
+    }
+
+    .parrafo-balanceado {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
 }
 
 /* -------Desktop---------- */
@@ -1134,7 +1195,7 @@ footer {
 
     .boton-conocelas {
         left: 650px;
-        bottom: 263px;
+        bottom: 112px;
     }
 
     .contenedor-padre-exterior {
@@ -1183,6 +1244,62 @@ footer {
         border-radius: 2rem 2rem 2rem 2rem;
     }
 
+    .banner2 {
+        height: 50rem;
+    }
+
+    /*------ Polenta ------*/
+
+    .img-polenta {
+        margin-right: 0rem;
+    }
+
+    .polenta500 {
+        font-size: 5.5rem;
+        line-height: 1.2;
+    }
+
+    .parrafo-poleta1 {
+        margin-top: 5.5rem;
+    }
+
+    .contendor-polenta {
+        margin: 0rem 3rem 0rem 1.5rem;
+    }
+
+    /*------- Premezcla -------*/
+    .contenedor-premezcla-todo {
+        display: block;
+    }
+
+    .img-rrhh {
+        height: 50rem;
+    }
+
+    .punto-rrhh-r {
+        margin: 0.8rem 3rem 0rem 0rem;
+    }
+
+    /*------ Empresa ------*/
+    .empresa-m-r {
+        margin-left: 0rem;
+    }
+
+    .div-datos {
+        margin-bottom: 5rem;
+    }
+
+    .cont-empresa-r {
+        margin-top: 0rem;
+    }
+    .linea-exterior {
+        width: 20rem;
+    }
+    /*-----*/
+    .elementos-derecha-semi {
+        margin-left: 0rem
+    }
+
 }
 
 @media (max-width: 1440px) {
@@ -1207,11 +1324,6 @@ footer {
 
     .contacto-info {
         margin: 0rem;
-    }
-
-    .parrafo-balanceado {
-        text-align: center;
-        margin-top: 4rem;
     }
 
     .cont-empresa {
@@ -1258,9 +1370,14 @@ footer {
         margin-left: 0rem;
     }
 
+    .contenedor-letras-emresa-r {
+        display: flex;
+        justify-content: center;
+    }
+
     /* ------ comercio -----*/
     .linea-exterior {
-        width: 20rem;
+        width: 32rem;
     }
 
     .agro-texto-r {
@@ -1272,6 +1389,61 @@ footer {
     .contendeor-organicas {
         margin: 0rem;
     }
+
+    /*---------- productos ------*/
+
+    .contenedor-texto {
+        left: 8%;
+    }
+
+    /*----- soja -------*/
+
+    .soja-margin {
+        margin: 7rem 7rem 0rem;
+    }
+
+    .contenedor-letras-doradas-soja {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Expeller {
+        margin-right: 2rem;
+    }
+
+    .contenedor-soja-r {
+        margin: 3rem 3rem 0rem 3rem;
+    }
+
+    .soja-r {
+        margin-top: 3rem;
+    }
+
+    .soja-resp {
+        display: flex;
+    }
+
+    .soja-1 {
+        display: none;
+    }
+
+    .Expeller {
+        margin-right: 2rem;
+    }
+/*----- premezcla ------*/
+    .contenedor-premezcla-doradas {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .y-premezcla {
+        justify-content: center;
+    }
+
+    .parrafo-rrhh-r {
+        text-align: start;
+    }
+
 }
 
 
@@ -1440,6 +1612,12 @@ footer {
     .balanceado-texto {
         text-align: center;
     }
+    .c-b{
+        top: 43%;
+
+    }
+
+
 
     /*----- CONTACTO ------*/
     .contenedor-contacto {
@@ -1483,7 +1661,7 @@ footer {
     }
 
     .img-certificado {
-        margin: 10rem 16.5rem;
+        margin: 3rem 16.5rem -7rem;
     }
 
     .contacto-info {
@@ -1495,6 +1673,71 @@ footer {
     .contenedor-texto-harias {
         top: 20%;
     }
+
+    .parrafo-harinas {
+        width: 33rem;
+        margin-bottom: 3rem;
+    }
+
+    /*------- Polenta ------*/
+    .contenedor-hijo-polenta {
+        display: block;
+    }
+
+    .contendor-polenta {
+        text-align: center;
+    }
+
+    .img-polenta {
+        margin-bottom: 3rem;
+    }
+    .contenedor-hijo-polenta{
+        display: block;
+    }
+
+    /*------- Soja -----*/
+    .y-r {
+        display: block;
+    }
+
+    .dorada-premezcla {
+        line-height: 1.2;
+    }
+
+    .elementos-derecha-t {
+        display: flex;
+        justify-content: center;
+        max-width: 63rem;
+    }
+
+    .elementos-derecha {
+        margin-left: 0rem;
+    }
+
+    .img-premezcla-contenedor,
+    .video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .parrafo-rrhh-r {
+        text-align: start;
+    }
+
+    .punto-rrhh-r {
+        margin: -1.2rem 3rem 0rem 0rem;
+    }
+    .res-letras {
+        display: block;
+    }
+    .datos2{
+        margin: -4rem;
+    }
+    /*------ comercio -------*/
+    .linea-exterior {
+        width: 10rem;
+    }
+
 }
 
 
@@ -1673,19 +1916,73 @@ footer {
     .boton-harinas1,
     .boton-harinas2,
     .boton--secundari {
-        width: 40rem;
+        width: 37rem;
     }
-    .parrafo-harinas, .img-harinas {
-        width:100%;
-        
+
+    .parrafo-harinas,
+    .img-harinas {
+        width: 100%;
+
     }
-    .contenedor-texto-harinas-c{
-        max-width: 30rem;
+
+    .parrafo-harinas {
+        margin-bottom: 3rem;
     }
-    .dorada-r{
+
+    .dorada-r {
         margin-top: 3rem;
     }
 
+    .img-harinas {
+        height: 32rem;
+    }
+
+
+    /*-------- Productos ----------*/
+
+    .nuestros {
+        font-size: 4rem;
+    }
+
+    .productos {
+        font-size: 5rem;
+    }
+
+    .boton-R {
+        width: 33.5rem;
+        font-size: 3rem;
+    }
+
+    /*------- Soja ------- */
+    .soja-margin {
+        margin: 0rem;
+    }
+
+    .mail {
+        font-size: 2rem;
+    }
+
+    .texto-rrhh-inferior {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    /*-------- Empresa --------*/
+    .empresa-m-r {
+        margin-left: 0rem;
+    }
+
+    .res-letras {
+        display: block;
+    }
+
+    .mail-empresa {
+        display: none;
+    }
+
+    .contenedor-punto-emrpesa-r {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: px) {
