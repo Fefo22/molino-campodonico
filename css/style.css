@@ -386,6 +386,7 @@ footer {
 
 .boton:hover {
     cursor: pointer;
+    background-color: var(--primario);
 }
 
 .boton--secundario {
@@ -1990,3 +1991,4 @@ footer {
         width: 30rem;
     }
 }
+
