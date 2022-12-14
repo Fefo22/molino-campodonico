@@ -498,7 +498,8 @@ footer {
     width: 53rem;
     margin-right: 10rem;
 }
-.contenedor-hijo-polenta{
+
+.contenedor-hijo-polenta {
     display: flex;
 }
 
@@ -1023,7 +1024,8 @@ footer {
 .bolt-premezcla {
     font-weight: 700;
 }
-.contenedor-premezcla-todo{
+
+.contenedor-premezcla-todo {
     display: flex;
 }
 
@@ -1122,6 +1124,32 @@ footer {
     height: 16rem
 }
 
+.columnas-harinas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.fuerza, .alfa-tapa {
+    margin-top: 5rem;
+}
+
+.pan-dulce,
+.fidepan,
+.germen,
+.practica,
+.semola {
+    margin-top: 2rem;
+}
+
+.estrellas {
+    margin-top: 13.5rem;
+}
+
+.harina-m-b {
+    margin-bottom: 7rem;
+}
+
+
 /* ----------------- Responsive -----------------*/
 
 @media (max-width: 1440px) {
@@ -1161,6 +1189,7 @@ footer {
     .texto-rrhh-r {
         margin: 3rem 0rem 4rem;
     }
+
     .contendor-doradas-rrhh {
         display: flex;
         justify-content: center;
@@ -1293,9 +1322,11 @@ footer {
     .cont-empresa-r {
         margin-top: 0rem;
     }
+
     .linea-exterior {
         width: 20rem;
     }
+
     /*-----*/
     .elementos-derecha-semi {
         margin-left: 0rem
@@ -1431,7 +1462,8 @@ footer {
     .Expeller {
         margin-right: 2rem;
     }
-/*----- premezcla ------*/
+
+    /*----- premezcla ------*/
     .contenedor-premezcla-doradas {
         text-align: center;
         margin-bottom: 5rem;
@@ -1613,7 +1645,8 @@ footer {
     .balanceado-texto {
         text-align: center;
     }
-    .c-b{
+
+    .c-b {
         top: 43%;
 
     }
@@ -1679,6 +1712,9 @@ footer {
         width: 33rem;
         margin-bottom: 3rem;
     }
+    .espacio-columnas{
+        margin-left: 3rem;
+    }
 
     /*------- Polenta ------*/
     .contenedor-hijo-polenta {
@@ -1692,7 +1728,8 @@ footer {
     .img-polenta {
         margin-bottom: 3rem;
     }
-    .contenedor-hijo-polenta{
+
+    .contenedor-hijo-polenta {
         display: block;
     }
 
@@ -1728,12 +1765,15 @@ footer {
     .punto-rrhh-r {
         margin: -1.2rem 3rem 0rem 0rem;
     }
+
     .res-letras {
         display: block;
     }
-    .datos2{
+
+    .datos2 {
         margin: -4rem;
     }
+
     /*------ comercio -------*/
     .linea-exterior {
         width: 10rem;
@@ -1937,7 +1977,19 @@ footer {
     .img-harinas {
         height: 32rem;
     }
-
+    .columnas-harinas{
+        display: block;
+    }
+    .parrafo-harinas1{
+        text-align: center;
+    }
+    .center-r{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .estrellas {
+        margin-top: 3rem;
+    }
 
     /*-------- Productos ----------*/
 
@@ -1991,4 +2043,3 @@ footer {
         width: 30rem;
     }
 }
-
