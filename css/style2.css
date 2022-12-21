@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --fuenteheading: 'Montserrat', sans-serif;
     --fuenteparrafos: 'Montserrat', sans-serif;
@@ -165,7 +164,7 @@ input.lupa {
 /*  MAIN  */
 
 .home1 {
-    background-image: url(/Sitioweb/img/BANNER-1.jpg);
+    background-image: url(img/BANNER-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -1508,7 +1507,7 @@ footer {
     }
 
     .Mira {
-        font-size: 2.3rem
+        font-size: 3rem
     }
 
     .harinas {
@@ -2042,37 +2041,7 @@ footer {
     .contenedor-punto-emrpesa-r {
         margin-bottom: 3rem;
     }
-}
 
-@media (max-width: px) {
-    .logogrande {
-        width: 30rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .Mira {
-        font-size: 1.5rem;
-    }
-
-    .boton-conocelas {
-        font-size: 1.3rem;
-        left: 222px;
-        bottom: 46px;
-    }
-
-    .boton-conocelas {
-        padding: 0.4rem 3rem;
-    }
-
-    body {
-        font-size: 1.3rem;
-    }
-
-    .texto-harinas {
-        line-height: 6rem;
-        top: 1170px;
-    }
     /*----- NAV EN RESPONSIVE------*/
 
     .icon {
@@ -2118,6 +2087,12 @@ footer {
 
     .resp-nav {
         margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: px) {
+    .logogrande {
+        width: 30rem;
     }
 }
 
