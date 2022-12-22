@@ -289,7 +289,7 @@ footer {
     justify-content: space-around;
     height: 12vh;
     align-items: center;
-    width: 99vw;
+    width: 98.9vw;
 }
 
 .footer-contenedor {
@@ -1115,7 +1115,6 @@ footer {
 
 .barra {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -1582,6 +1581,7 @@ footer {
     .rrhh-dorada {
         margin: -6px;
         text-align: center;
+        font-size: 4rem;
     }
 
     /*------AGRO-----*/
@@ -1603,6 +1603,7 @@ footer {
     .parrafo-balanceado {
         text-align: center;
         margin: 2rem;
+        font-size: 2rem
     }
 
     .logogrande {
@@ -1645,11 +1646,16 @@ footer {
 
     .balanceado-texto {
         text-align: center;
+        font-size: 2rem;
     }
 
     .c-b {
         top: 43%;
 
+    }
+
+    .parrafo-exterior {
+        font-size: 1.7rem;
     }
 
 
@@ -1774,6 +1780,10 @@ footer {
 
     .datos2 {
         margin: -4rem;
+    }
+    
+    .soja-resp {
+        margin-left: 1rem;
     }
 
     /*------ comercio -------*/
@@ -2042,6 +2052,15 @@ footer {
     .contenedor-punto-emrpesa-r {
         margin-bottom: 3rem;
     }
+
+    .parrafo-empresa {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .empresa-texto {
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: px) {
@@ -2050,7 +2069,7 @@ footer {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 426px) {
     .Mira {
         font-size: 1.5rem;
     }
@@ -2073,10 +2092,10 @@ footer {
         line-height: 6rem;
         top: 1170px;
     }
+
     /*----- NAV EN RESPONSIVE------*/
 
     .icon {
-        vertical-align: top;
         cursor: pointer;
     }
 
@@ -2105,7 +2124,6 @@ footer {
         top: 100%;
         opacity: 0;
         display: none;
-        transition: all .5s ease;
     }
 
     .dropdown li {
@@ -2121,8 +2139,22 @@ footer {
     }
 }
 
-@media (width >= 768px){
-    .main-links{
+@media (width >=768px) {
+    .main-links {
         display: none;
     }
+}
+
+@media (width <=767px) {
+    .barra {
+        display: none;
+    }
+}
+
+/*------- PDF  ----------*/
+.iframe {
+    width: 80%;
+    height: 90vh;
+    border-radius: 2rem;
+    margin-top: 3rem;
 }

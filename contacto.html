@@ -87,33 +87,28 @@
                         <p class="parrafo-contacto">servicios o simplemente desea realizar una</p>
                         <p class="parrafo-contacto">consulta, no deje de contactarse con nosotros.</p>
                     </div>
-                    <div class="formulario-completo">
+                    <form class="formulario-completo" action="https://formsubmit.co/Info@molinocampodonico.com.ar"
+                        method="POST">
                         <div class="campo">
                             <p class="form-contacto">NOMBRE</p>
-                            <label class="campo__label" for="nombre"></label>
-                            <input class="campo__field" type="text" id="nombre">
+                            <input class="campo__field" type="text" name="name" required>
                         </div>
                         <div class="campo">
                             <P class="form-contacto">E - MAIL</P>
-                            <label class="campo__label" for="emeil"></label>
-                            <input class="campo__field" type="email" id="email">
+                            <input type="email" class="campo__field" name="email" required>
                         </div>
                         <div class="campo">
                             <P class="form-contacto">AREA DE CONSULTA</P>
-                            <label class="campo__label" for="emeil"></label>
-                            <input class="campo__field" type="email" id="email">
+                            <input type="text" class="campo__field" name="area" required>
                         </div>
-                        <div class="campo">
-                            <P class="form-contacto">MENSAJE</P>
-                            <label class="campo__label" for="mensaje"></label>
-                            <div class="div_campo__texarea">
-                                <textarea class="campo__texarea"></textarea>
-                                <input type="submit" value="Enviar" class="boton boton--primario boton-p">
-                            </div>
+                        <P class="form-contacto">MENSAJE</P>
+                        <div class="div_campo__texarea">
+                            <textarea class="campo__texarea" name="mensaje" id="" cols="30" rows="10"></textarea>
+                            <button type="submit" class="boton boton--primario boton-p">Enviar</button>
                         </div>
-                    </div>
-
+                    </form>
                 </div>
+
                 <div class="contendeor-2">
                     <div class="margin-b-contacto ">
                         <p class="parrafo-contacto">Administración y ventas</p>
