@@ -5,14 +5,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>PDF</title>
-</head>
+    <title>MolinoCampodonico</title>
+    <!-- prefetch para la primer pagina q vea el usuario -->
+    <link rel="prefetch" href="css/nosotros.css" as="document">
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-<body>
-    <center>
-        <iframe class="iframe" src="documentacion/Política-Antisoborno.pdf"></iframe>
-    </center>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<header class="header">
+    <div class="contenedor">
+        <nav>
+            <ul class="main-links">
+                <li class="dropdown-li">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    <ul class="dropdown">
+                        <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+                        <a href="empresa.html" class="navegacion-enlace resp-nav">GRUPO CAMPODONICO</a>
+                        <a href="productos.html" class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                        <a href="contacto.html" class="navegacion-enlace1 resp-nav">CONTACTO</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <div class="barra">
+            <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">GRUPO CAMPODONICO</a>
+                <div class="dropdown-content2">
+                    <a href="empresa.html" class="navegacion-enlace resp-nav">Nosotros</a>
+                    <a href="control.html" class="navegacion-enlace resp-nav">Control de Calidad</a>
+                    <a href="RRHH.html" class="navegacion-enlace resp-nav">Area de RRHH</a>
+                    <a href="exterior.html" class="navegacion-enlace resp-nav">Comerio Exterior</a>
+                </div>
+            </div>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                <div class="dropdown-content2">
+                    <a href="premezcla.html" class="navegacion-enlace resp-nav">Premezcla</a>
+                    <a href="polenta.html" class="navegacion-enlace resp-nav">Polenta</a>
+                    <a href="balanceado.html" class="navegacion-enlace resp-nav">Balanceado</a>
+                    <a href="agronegocios.html" class="navegacion-enlace resp-nav">Agronegocios</a>
+                    <a href="soja.html" class="navegacion-enlace resp-nav">Soja</a>
+                    <a href="harinas.html" class="navegacion-enlace resp-nav">Harinas</a>
+                </div>
+            </div>
+            <a href="contacto.html" class="navegacion-enlace resp-nav">CONTACTO</a>
+        </div>
+        <a href="index.html">
+            <div class="logogrande" href="index.html">
+                <img loading="lazy" src="img/logo.png" alt="imagen logo">
+            </div>
+        </a>
+    </div>
+
+    </div>
+
+    <body>
+
+        <!-- <center>
+            <iframe class="iframe" src="documentacion/Política-Antisoborno.pdf"></iframe>
+        </center> -->
+
+        <div class="contenedor-pdfs">
+            <div class="contenedor-exterior margin-contenedor-pdfs">
+                <p class="dorada-agro politica">Politica de anticorrupcion</p>
+                <div>
+                    <p class="letra-pdf">1.- Introducción</p>
+                    <p class="letra-pdf">Esta Política Antisoborno y Anticorrupción complementa el Código de
+                        Ética de SA MIGUEL
+                        CAMPODONICO LTDA y aplica a todos los directores, síndicos, empleados, contratistas y
+                        terceros que actúen en representación de SA MIGUEL CAMPODONICO LTDA.</p>
+                    <p class="letra-pdf">2.- Cumplimiento</p>
+                    <p class="letra-pdf">SA MIGUEL CAMPODONICO LTDA se compromete a cumplir con todas las leyes
+                        anticorrupción que le resulten aplicables en las jurisdicciones en donde opera, incluida la Ley
+                        Estadounidense de Prácticas Corruptas en el Extranjero (U.S. Foreign Corrupt Practices Act,
+                        “FCPA”), el Código Penal Argentino, la Ley N° 27.401 de Responsabilidad Penal Empresarial y
+                        con todas las leyes que le resulten aplicables de contratación y administración del sector
+                        público, incluyendo las regulaciones de los Decretos N°277/2018, N°1.023/2001 y
+                        N°1.030/2016 sobre contrataciones públicas y las guías y recomendaciones sobre prevención
+                        de conductas ilícitas en los contratos administrativos que emita la Oficina Anticorrupción del
+                        Ministerio de Justicia y Derechos Humanos de Argentina de acuerdo al Decreto N°277/2018.
+                        SA MIGUEL CAMPODONICO LTDA se compromete también a cumplir con todos los requisitos
+                        que le resulten aplicables de informes y registros financieros, incluidos los de la Ley
+                        norteamericana de Información sobre Transacciones en Divisas con el Extranjero de 1970, y
+                        sus enmiendas, y las leyes argentinas aplicables contra el lavado de dinero y la financiación
+                        del
+                        terrorismo, incluidas las Leyes N°25.246, N°26.087, N°26.119, N°26.268 y N°26.683 de
+                        Argentina.</p>
+                    <p class="letra-pdf bolt-pdf">3.- Declaración de la Política Antisoborno y Anticorrupción. </p>
+                    <div class="lista1">
+                        <ul>
+                            <li class="letra-pdf">SA MIGUEL CAMPODONICO LTDA no tolerará el
+                                soborno ni ninguna otra forma de
+                                corrupción, o conductas corruptas o inapropiadas en el ámbito de contratos
+                                administrativos, públicos o privados.
+                            </li>
+                            <li class="letra-pdf">SA MIGUEL CAMPODONICO LTDA cumple con todas
+                                las Leyes Penales, Leyes de
+                                Contratación Pública y Leyes relativas, aplicables, vigentes en los países en donde
+                                opere comercialmente.
+                            </li>
+                            <li class="letra-pdf">Las siguientes conductas van en contra de
+                                la política de SA MIGUEL CAMPODONICO
+                                LTDA:
+                                <ul class="lista1">
+                                    <li class="letra-pdf">Influir en procesos de licitación u otro tipo, por medios
+                                        ilegales;</li>
+                                    <li class="letra-pdf">Eludir o infringir las reglas para la importación-exportación
+                                        de productos;</li>
+                                    <li class="letra-pdf">Obtener acceso y usar información no pública de licitaciones;
+                                    </li>
+                                    <li class="letra-pdf">Evadir impuestos o penalidades;</li>
+                                    <li class="letra-pdf">Influir en la resolución de demandas o acciones de ejecución;
+                                    </li>
+                                    <li class="letra-pdf">Obtener excepciones a las regulaciones por medios prohibidos
+                                        por la ley existente;</li>
+                                    <li class="letra-pdf">Evitar la terminación contractual por medios ilegales.</li>
+                                    <li class="letra-pdf">Las personas que trabajan para SA MIGUEL CAMPODONICO LTDA o
+                                        que actúan
+                                        en su representación, no podrán ofrecer, prometer o dar un soborno, que puede
+                                        tratarse de cualquier objeto de valor, aunque no sea dinero, a cualquier
+                                        persona, ni
+                                        podrán solicitar, acordar aceptar, ni aceptar, una coima de cualquier otra
+                                        persona.</li>
+                                    <li class="letra-pdf">SA MIGUEL CAMPODONICO LTDA realiza negocios solo con socios
+                                        comerciales
+                                        de buena reputación que se dedican a actividades legítimas y cuyos fondos
+                                        provienen de fuentes legítimas.</li>
+                                    <li class="letra-pdf">Toda sospecha de soborno, corrupción, o violaciones a las
+                                        Leyes referidas en ésta
+                                        Política será investigada y cualquier infracción a la Política de SA MIGUEL
+                                        CAMPODONICO LTDA o las leyes aplicables podrá dar origen a una medida
+                                        disciplinaria, una rescisión contractual o una acción legal.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="firma">
+                        <p class="letra-pdf-firma">DIRECTORIO DE SA MIGUEL CAMPODONICO LTDA</p>
+                        <p class="letra-pdf-firma">LA PLATA, ARGENTINA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-contenedor">
+            <div class="cotenedor-logo-contacto">
+                <div class="footer-contenedor-chico">
+                    <a class="logochico" href="index.html">
+                        <img src="img/logo-chico.png" alt="logo chico">
+                    </a>
+                </div>
+                <div class="footer-letras">
+                    <p>Info@molinocampodonico.com.ar</p>
+                    <p>Tel: (0221) 423-0000</p>
+                </div>
+            </div>
+
+
+            <div class="iconos">
+                <a href="https://www.instagram.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg></a>
+                <p>
+                    <a href="https://www.facebook.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></a>
+                </p>
+            </div>
+
+
+        </footer>
+
+        <script src="js/modernizr.js"></script>
+    </body>
+
+
+    </footer>
 
 </html>

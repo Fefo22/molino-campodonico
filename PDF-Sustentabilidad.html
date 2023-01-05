@@ -5,14 +5,257 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>PDF</title>
-</head>
+    <title>MolinoCampodonico</title>
+    <!-- prefetch para la primer pagina q vea el usuario -->
+    <link rel="prefetch" href="css/nosotros.css" as="document">
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-<body>
-    <center>
-        <iframe class="iframe" src="documentacion/Sustentabilidad.pdf"></iframe>
-    </center>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<header class="header">
+    <div class="contenedor">
+        <nav>
+            <ul class="main-links">
+                <li class="dropdown-li">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    <ul class="dropdown">
+                        <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+                        <a href="empresa.html" class="navegacion-enlace resp-nav">GRUPO CAMPODONICO</a>
+                        <a href="productos.html" class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                        <a href="contacto.html" class="navegacion-enlace1 resp-nav">CONTACTO</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <div class="barra">
+            <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">GRUPO CAMPODONICO</a>
+                <div class="dropdown-content2">
+                    <a href="empresa.html" class="navegacion-enlace resp-nav">Nosotros</a>
+                    <a href="control.html" class="navegacion-enlace resp-nav">Control de Calidad</a>
+                    <a href="RRHH.html" class="navegacion-enlace resp-nav">Area de RRHH</a>
+                    <a href="exterior.html" class="navegacion-enlace resp-nav">Comerio Exterior</a>
+                </div>
+            </div>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                <div class="dropdown-content2">
+                    <a href="premezcla.html" class="navegacion-enlace resp-nav">Premezcla</a>
+                    <a href="polenta.html" class="navegacion-enlace resp-nav">Polenta</a>
+                    <a href="balanceado.html" class="navegacion-enlace resp-nav">Balanceado</a>
+                    <a href="agronegocios.html" class="navegacion-enlace resp-nav">Agronegocios</a>
+                    <a href="soja.html" class="navegacion-enlace resp-nav">Soja</a>
+                    <a href="harinas.html" class="navegacion-enlace resp-nav">Harinas</a>
+                </div>
+            </div>
+            <a href="contacto.html" class="navegacion-enlace resp-nav">CONTACTO</a>
+        </div>
+        <a href="index.html">
+            <div class="logogrande" href="index.html">
+                <img loading="lazy" src="img/logo.png" alt="imagen logo">
+            </div>
+        </a>
+    </div>
+
+    <body>
+
+        <!--<center>
+            <iframe class="iframe" src="documentacion/Sustentabilidad.pdf"></iframe>
+        </center> -->
+
+        <div class="contenedor-pdfs">
+            <div class="contenedor-exterior margin-contenedor-pdfs">
+                <p class="dorada-agro politica">Seccion Sustentabilidad</p>
+                <div>
+                    <p class="letra-pdf">En Molino Campodónico somos conscientes de que la sustentabilidad está
+                        integrada en la forma en la que operamos el negocio. Tenemos el desafío de
+                        crear valor en armonía con el cuidado del planeta y el respeto por las
+                        personas.
+                    </p>
+                    <p class="letra-pdf">Para ello, hemos alineado nuestra estrategia de negocio buscando potenciar
+                        los impactos positivos y mitigar los impactos negativos a lo largo de toda la
+                        cadena de valor.
+                    </p>
+                    <p class="letra-pdf">Juntos podemos crear un futuro que proteja nuestro planeta para las
+                        generaciones futuras.
+                    </p>
+                    <p class="letra-pdf">Los invitamos a conocer nuestro Plan de Sustentabilidad 2022 que hemos
+                        diseñado en conjunto con CR | Consultora en Sustentabilidad, en línea con
+                        las principales iniciativas internacionales de gestión y reporte.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">NUESTRO PLAN DE SUSTENTABILIDAD</p>
+                    <p class="letra-pdf">El Plan de Sustentabilidad Molino Campodónico 2022, comprende 4 áreas de
+                        impacto y 12 temas relevantes.
+                    </p>
+
+                    <!--     IMG        -->
+                    <img src="img/sustentabilidad.jpg" alt="sustentabilidad">
+                    <p class="letra-pdf bolt-pdf">PAPITAL SOCIAL</p>
+                    <ul class="lista1">
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Calidad e Inocuidad del Producto:</span>
+                            Nuestro programa de inocuidad
+                            alimentaria garantiza a los clientes el cumplimiento de los más altos
+                            estándares de seguridad y calidad alimentaria en todo el proceso
+                            productivo, contribuyendo al cuidado y seguridad de los productos y a
+                            comunicar la calidad de los mismos en las industrias y consumidores
+                            finales, siendo parte de una cadena de suministro sustentable.
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Bienestar del cliente:</span>
+                            Nuestra línea de productos orgánicos, nos
+                            permite posicionarnos en un segmento cada vez más amplio y con
+                            diversas necesidades en cuanto a ofertas más saludables y nutritivas.                            
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Prácticas de venta y etiquetado de productos:</span>
+                            Nuestros productos
+                            cuentan con información específica y detallada para garantizar la
+                            seguridad alimentaria e informar a los consumidores sobre el
+                            contenido nutricional, así como los métodos de producción que se han
+                            utilizado.
+                                                   
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Compromiso con la comunidad:</span>
+                            Realizamos numerosas acciones que
+                            contribuyen a mejorar el ámbito institucional y social de la Ciudad de
+                            La Plata. Contamos con acuerdos de donaciones en más de 30
+                            organismos, entre los que se encuentran, merenderos, comedores,
+                            hogares e instituciones educativas. También colaboramos con el
+                            Cuartel de Bomberos de la Plata y con diversas instituciones locales.                       
+                        </li>
+                    </ul>
+
+                    <p class="letra-pdf bolt-pdf">MODELO DE NEGOCIO E INNOVACIÓN:</p>
+                    <ul class="lista1">
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Diseño de productos y gestión del ciclo de vida:</span>
+                            Buscamos reducir
+                            el impacto ambiental del packaging de nuestros productos,
+                            innovando con el uso de materiales que permitan su posterior
+                            reciclado o compostaje.                            
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Gestión de la cadena de suministro:</span>
+                            Buscamos la implementación
+                            de prácticas sustentables en toda la cadena de suministro,
+                            estableciendo alianzas con proveedores y clientes claves que permitan
+                            gestionar los impactos ambientales y sociales en toda la cadena de
+                            valor.                                                        
+                        </li>
+                    </ul>
+
+                    <p class="letra-pdf bolt-pdf">MEDIOAMBIENTE:</p>
+                    <ul class="lista1">
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Gestión de la Energía:</span>
+                            Estamos implementando un Plan de Eficiencia
+                            Energética que nos permitirá lograr un mejor equilibrio entre el uso de
+                            electricidad procedente de red y el uso de energías alternativas.                                                      
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Gestión del agua: </span>
+                            El agua es un recurso indispensable para nuestro
+                            proceso productivo. Hacemos un consumo consciente de este recurso
+                            y no generamos efluentes como descarte de nuestra producción.                                                                                  
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Gestión de residuos:</span>
+                            Hemos implementado un programa de
+                            eliminación de plásticos de un solo uso, con el objetivo de reemplazar
+                            el uso de material descartable por elementos que puedan ser
+                            reutilizados. También contamos con un programa de gestión de
+                            residuos, que tiene por objetivo la separación de residuos en origen y
+                            su posterior tratamiento. Para ello, realizamos un acuerdo con la Unión
+                            de Cartoneros de la Plata, quienes se encargan de retirar el material
+                            reciclable para su posterior procesamiento.                                                                                                              
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Emisiones de GEI: </span>
+                            Somos conscientes de la importancia de medir las
+                            emisiones de Gases de Efecto Invernadero (GEI) para tomar medidas
+                            de compensación, mitigación y reducción.                                                                                                              
+                        </li>
+                    </ul>
+
+                    <p class="letra-pdf bolt-pdf">CAPITAL HUMANO:</p>
+                    <ul class="lista1">
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Salud y seguridad de los empleados:</span>
+                            Estamos convencidos de que
+                            un buen desempeño en la gestión de salud y la seguridad de la fuerza
+                            laboral ayuda a crear mejores ambientes de trabajo, logrando un
+                            aumento de la productividad y mejora en las relaciones laborales.                                                        
+                        </li>
+                        <li class="letra-pdf"><span class="letra-pdf bolt-pdf">Desarrollo del talento humano: </span>
+                            Nuestra organización es una gran
+                            generadora de empleo en la Ciudad de La Plata, y constituye un punto
+                            de entrada al mundo laboral para los jóvenes. Contamos con
+                            programas de pasantías, tanto para estudiantes del nivel secundario
+                            como terciario. Ofrecemos salarios competitivos, entornos de trabajo
+                            seguros y oportunidades de crecimiento profesional.                                                       
+                        </li>
+                    </ul>
+                    <p class="letra-pdf bolt-pdf">¿Querés conocer más sobre la Política de Sustentabilidad de Molino
+                        Campodónico?
+                        </p>
+                    <p class="letra-pdf bolt-pdf">Envianos un correo a: (proporcionar una dirección de correo electrónico)</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-contenedor">
+            <div class="cotenedor-logo-contacto">
+                <div class="footer-contenedor-chico">
+                    <a class="logochico" href="index.html">
+                        <img src="img/logo-chico.png" alt="logo chico">
+                    </a>
+                </div>
+                <div class="footer-letras">
+                    <p>Info@molinocampodonico.com.ar</p>
+                    <p>Tel: (0221) 423-0000</p>
+                </div>
+            </div>
+
+
+            <div class="iconos">
+                <a href="https://www.instagram.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg></a>
+                <p>
+                    <a href="https://www.facebook.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></a>
+                </p>
+            </div>
+
+
+        </footer>
+
+        <script src="js/modernizr.js"></script>
+    </body>
+
+
+    </footer>
 
 </html>

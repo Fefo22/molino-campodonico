@@ -5,14 +5,610 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>PDF</title>
-</head>
+    <title>MolinoCampodonico</title>
+    <!-- prefetch para la primer pagina q vea el usuario -->
+    <link rel="prefetch" href="css/nosotros.css" as="document">
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-<body>
-    <center>
-        <iframe class="iframe" src="documentacion/Programa-de-integridad.pdf"></iframe>
-    </center>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<header class="header">
+    <div class="contenedor">
+        <nav>
+            <ul class="main-links">
+                <li class="dropdown-li">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    <ul class="dropdown">
+                        <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+                        <a href="empresa.html" class="navegacion-enlace resp-nav">GRUPO CAMPODONICO</a>
+                        <a href="productos.html" class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                        <a href="contacto.html" class="navegacion-enlace1 resp-nav">CONTACTO</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <div class="barra">
+            <a href="index.html" class="navegacion-enlace1 resp-nav">INICIO</a>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">GRUPO CAMPODONICO</a>
+                <div class="dropdown-content2">
+                    <a href="empresa.html" class="navegacion-enlace resp-nav">Nosotros</a>
+                    <a href="control.html" class="navegacion-enlace resp-nav">Control de Calidad</a>
+                    <a href="RRHH.html" class="navegacion-enlace resp-nav">Area de RRHH</a>
+                    <a href="exterior.html" class="navegacion-enlace resp-nav">Comerio Exterior</a>
+                </div>
+            </div>
+            <div class="dropdown2 navegacion">
+                <a class="navegacion-enlace1 resp-nav">PRODUCTOS</a>
+                <div class="dropdown-content2">
+                    <a href="premezcla.html" class="navegacion-enlace resp-nav">Premezcla</a>
+                    <a href="polenta.html" class="navegacion-enlace resp-nav">Polenta</a>
+                    <a href="balanceado.html" class="navegacion-enlace resp-nav">Balanceado</a>
+                    <a href="agronegocios.html" class="navegacion-enlace resp-nav">Agronegocios</a>
+                    <a href="soja.html" class="navegacion-enlace resp-nav">Soja</a>
+                    <a href="harinas.html" class="navegacion-enlace resp-nav">Harinas</a>
+                </div>
+            </div>
+            <a href="contacto.html" class="navegacion-enlace resp-nav">CONTACTO</a>
+        </div>
+        <a href="index.html">
+            <div class="logogrande" href="index.html">
+                <img loading="lazy" src="img/logo.png" alt="imagen logo">
+            </div>
+        </a>
+    </div>
+
+    <body>
+
+        <!--
+        <center>
+            <iframe class="iframe" src="documentacion/Programa-de-integridad.pdf"></iframe>
+        </center> -->
+
+        <div class="contenedor-pdfs">
+            <div class="contenedor-pdf-programa">
+                <p class="dorada-agro politica">Programa de Integridad</p>
+                <div>
+                    <p class="letra-pdf bolt-pdf">1. OBJETIVO</p>
+                    <p class="letra-pdf">Definir e implementar el Programa de Integridad consistentes en el conjunto de
+                        acciones,
+                        mecanismos y procedimientos internos de promoción de la integridad, supervisión y control,
+                        orientados a prevenir, detectar y corregir irregularidades y actos ilícitos comprendidos por la
+                        ley
+                        Nacional 27.401.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">2. ALCANCE</p>
+                    <p class="letra-pdf">Todos los empleados de las Unidades de Negocio que integran el Grupo
+                        CAMPODONICO. La
+                        totalidad de partes interesadas identificadas en la ejecución de contratos administrativos o en
+                        cualquier interacción con el sector público (Art. 23 inc. b) de la Ley Nacional 27.401..</p>
+                    <p class="letra-pdf bolt-pdf">3. GLOSARIO</p>
+                    <p class="letra-pdf">No hay consideraciones relativas.</p>
+                    <p class="letra-pdf bolt-pdf">4. REFERENCIAS</p>
+                    <p class="letra-pdf ">Ley 24.701 – Régimen de Responsabilidad Penal Empresaria</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">Ley 11.179 – Código Penal de la Nación Argentina</p>
+                    <p class="letra-pdf bolt-pdf">5. DESARROLLO Y RESPONSABILIDADES</p>
+                    <p class="letra-pdf"><Samp class="letra-pdf bolt-pdf">5.1 Breve Síntesis de la Ley 27.401.</Samp>
+                        Objeto, alcances, responsabilidad de las personas jurídicas y
+                        características generales.</p>
+                    <p class="letra-pdf">Esta ley establece el régimen de responsabilidad penal aplicable a <samp
+                            class="bolt-pdf">las personas jurídicas privadas,</samp>
+                        indistintamente sea su forma legal, de capital nacional o extranjero, con o sin participación
+                        estatal.
+                        Sean asociaciones civiles, fundaciones, mutuales o cooperativas.</p>
+                    <p class="letra-pdf bolt-pdf">Delitos</p>
+                    <p class="letra-pdf ">-Cohecho y tráfico de influencias, nacional y transnacional (previstos por los
+                        art. 258 y 258 bis del Cód.Penal).</p>
+                    <p class="letra-pdf ">-Negociaciones incompatibles con el ejercicio de funciones públicas (previstas
+                        por el art. 265 del Cód.
+                        Penal).
+                    </p>
+                    <p class="letra-pdf ">-Concusión o exacción ilegal (prevista por el art. 268 del Cód. Penal).
+                    </p>
+                    <p class="letra-pdf ">-Enriquecimiento ilícito de funcionarios y empleados públicos (previsto por el
+                        art. 268 del Cód. Penal)</p>
+                    <p class="letra-pdf ">-Balances e informes falsos agravados (previsto por el art. 300 bis del Cód.
+                        Penal).</p>
+                    <p class="letra-pdf bolt-pdf">Responsabilidad de las Personas Jurídicas</p>
+
+                    <div class="contedor-rectangulo">
+                        <div class="borde">
+                            <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Revisó:</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Maximiliano Rusconi</p>
+                        </div>
+                        <div class="borde borde2">
+                            <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Aprobó:</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Alejandro Campodónico</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Fecha 08/03/2021</p>
+                        </div>
+                    </div>
+                    
+                    <p class="letra-pdf letra-pdf-sinmarg">-Por delitos que hubieren sido realizados, de forma directa o
+                        indirecta, con
+                        su intervención o en su
+                        nombre, interés o su beneficio.</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Por sus empleados o terceros, siempre que la persona
+                        jurídica hubiese
+                        ratificado su gestión.</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-La persona jurídica queda exenta de responsabilidad si aquel
+                        que cometió el
+                        delito hubiese actuado
+                        exclusivamente en su beneficio.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Ante cualquier modificación societaria, la responsabilidad
+                        es transmitida a
+                        la persona jurídica resultante
+                        o absorbente</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-La persona jurídica será responsable, aunque no haya sido
+                        posible identificar
+                        la persona física, siempre
+                        que se establezca que el delito no se podría haber cometido sin la tolerancia de los órganos de
+                        la
+                        persona jurídica.</p>
+                    <p class="letra-pdf bolt-pdf">Prescripción</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">A los 6 años de la comisión del delito.</p>
+                    <p class="letra-pdf bolt-pdf">Sanciones</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Multa de 2 a 5 veces el beneficio indebido</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Suspensión total o parcial de actividades (máx. 10 años).
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Suspensión para participar en concursos o licitaciones
+                        estatales (máx. 10 años)</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Disolución y liquidación de la personería cuando su función
+                        principal o motivo de creación, hubiese sido
+                        cometer el delito.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Pérdida o suspensión de beneficios estatales</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Publicación de un extracto de la sentencia condenatoria a
+                        costa de la persona jurídica.
+                    </p>
+
+                    <!--       Agravantes        -->
+                    <p class="letra-pdf bolt-pdf">Agravantes y Atenuantes</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Funcionamiento de control y supervisión adecuados del
+                        programa de integridad.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Jerarquía de los involucrados.</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Omisión de vigilancia.</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Extensión del daño causado.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">Monto de dinero involucrado en el delito.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Denuncia espontánea como resultado detección interna.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Disposición para resarcir el daño.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">-Cooperación con la investigación.</p>
+
+                    <!--       Acuerdos        -->
+                    <p class="letra-pdf bolt-pdf">Acuerdos de Colaboración Eficaz (entre la Persona Jurídica y el
+                        Ministerio Público Fiscal)
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Datos precisos, útiles y comprobables para el
+                        esclarecimiento de los hechos.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Identificación de autores.</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Medidas disciplinarias contra quienes hayan participado en
+                        el hecho.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Pago de la multa mínima.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Devolución de las ganancias.
+                    </p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Reparación de los daños efectuados.
+                        .</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">- Realización de servicios a favor de la comunidad.
+                    </p>
+
+                    <!--       Extecion de pena        -->
+                    <p class="letra-pdf bolt-pdf">Exención de Pena</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">Cuando se den simultáneamente:
+                    </p>
+                    <ul class="margin-lista">
+                        <li>1-Denuncia esponánea, resultado de investigación interna.</li>
+                        <li>2-Cuente con un programa de Integridad implementado antes del delito.
+                        </li>
+                        <li>3-Devolución del beneficio indebido</li>
+                    </ul>
+
+                    <!--       Programa de integridad        -->
+                    <p class="letra-pdf"><samp class="bolt-pdf letra-pdf">5.2 Programa de integridad.</samp>Requisitos
+                        legales y elementos</p>
+                    <p class="letra-pdf">Conjunto de acciones, mecanismos y procedimientos internos de promoción de la
+                        integridad,
+                        supervisión y control, orientados a prevenir, detectar y corregir irregularidades y actos
+                        ilícitos
+                        comprendidos por la ley 27.401. La existencia de un Programa de Integridad conforme a dicha ley
+                        será
+                        condición necesaria para poder contratar con el Estado Nacional.
+                    </p>
+                    <p class="letra-pdf">El Programa de Integridad está compuesto básicamente por tres elementos
+                        mandatorios: </p>
+                    <p class="letra-pdf">● Código de Ética. Políticas y procedimientos de integridad aplicables a todos
+                        los integrantes de la
+                        empresa, cualquiera fuese su cargo.
+                    </p>
+                    <p class="letra-pdf">● Reglas y procedimientos específicos. Para prevenir ilícitos en cualquier
+                        acción con el sector público.
+                    </p>
+                    <p class="letra-pdf">● Capacitaciones periódicas del Programa de integridad. Plan de capacitación
+                        para todos los integrantes
+                        de la empresa.
+                    </p>
+                    <p class="letra-pdf">Sumados a los elementos mandatorios, el Programa de Integridad contendrá:
+                    </p>
+                    <ul class="margin-lista">
+                        <li>Análisis periódico de riesgos.</li>
+                        <li>Apoyo visible e inequívoco al Programa de Integridad por parte de la Dirección del Grupo
+                            Campodonico.
+                        </li>
+                        <li>Canales-Líneas internos de denuncia abiertos y difundidos.</li>
+                        <li>Protección de denunciantes.</li>
+                        <li>Sistema de investigación interna con sanciones.</li>
+                        <li>Comprobación de integridad y trayectoria (terceros, socios, proveedores, distribuidores,
+                            etc.)</li>
+                        <li>Control con el Programa de Integridad durante procesos de transformación y adquisiciones
+                            societarias.</li>
+                        <li>Monitoreo y evaluación continua de la efectividad Programa de Integridad.
+                        </li>
+                        <li>La definición de un Responsable Interno del Programa de Integridad (desarrollo, coordinación
+                            y
+                            supervisión)</li>
+                        <li>Cumplimiento de exigencias reglamentarias (que sobre el Programa de Integridad dicten los
+                            organismos nacionales, provinciales o municipales que rija la actividad del Grupo
+                            Campodonico).
+                        </li>
+                    </ul>
+
+                    <!--       Codigo de Etica       -->
+                    <p class="letra-pdf bolt-pdf">5.2.1 Código de Ética</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">El Directorio del Grupo Campodonico, asume como ejes
+                        fundamentales para el desarrollo de los
+                        negocios la ética y la transparencia. Este Código refleja dicha orientación y pretende servir de
+                        guía
+                        para mantener el más alto nivel de integridad, respeto, responsabilidad y compromiso con la
+                        vida. Este
+                        Código será de obligatorio conocimiento y aplicación para sus destinatarios, quienes deben velar
+                        para
+                        que sus actuaciones se enmarquen siempre en las reglas que contiene.
+                        Por ello es fundamental que todos los colaboradores, sus beneficiarios, proveedores,
+                        contratistas,
+                        aliados y clientes actúen y desempeñen sus funciones y actividades de una manera consistente con
+                        este Código y con la reglamentación que nos rige.
+                        Estimulamos la consulta de éste código y su adopción como una herramienta dirigida a erradicar
+                        cualquier forma de violación a la ética y las malas prácticas, incluyendo a las acciones de
+                        corrupción,
+                        soborno, fraude, lavado de activos, financiación del terrorismo y desconocimiento de las normas
+                        nacionales e internacionales que nos rigen. El Directorio invita a cumplir con la promesa de
+                        cero
+                        tolerancia frente a las acciones señaladas y a reportar, a través de los canales
+                        institucionales, los
+                        hechos o actividades sospechosas que desconozcan los lineamientos de éste código.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">Ver documento Código de Ética, anexo al Programa de Integridad.</p>
+                    <p class="letra-pdf bolt-pdf">5.2.1.1 Responsabilidad de los Líderes del Grupo Campodonico</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">Educar con el ejemplo en el cumplimiento de los principios
+                        del Código.
+                        Comunicar expresamente a los equipos de trabajo el deber de cumplir los principios éticos y con
+                        la
+                        normatividad del Grupo Campodonico en el desempeño de sus responsabilidades laborales.
+                        Realizar acciones periódicas con los integrantes de sus equipos de trabajo que propendan por la
+                        interiorización del Código en las actividades del área.
+                        Hacer seguimiento a la gestión, a efectos de verificar la aplicación de los principios del
+                        Código y de los
+                        controles internos de la compañía, que se sustentan en la necesidad de mitigar riesgos
+                        empresariales.
+                        No aplicar represalias contra quienes presenten denuncias contra presuntas violaciones al
+                        Código.
+                        Ser intolerantes frente a conductas que violan los principios o con las cuales se incumpla con
+                        la
+                        normativa aplicable.
+                        Permitir y promover la formación de consultas, dilemas y denuncias.
+                        Difundir y garantizar la aplicación de la reglamentación interna en materia de riesgo de
+                        cumplimiento.</p>
+
+                    <!--       Principios Eticos       -->
+                    <p class="letra-pdf bolt-pdf">5.2.1.2 Principios Éticos</p>
+                    <p class="letra-pdf letra-pdf-sinmarg">Los principios, que a continuación se señalan, son reglas de
+                        la organización que constituyen fuente de
+                        responsabilidad y guían el comportamiento esperado de los destinatarios de este Código.
+                    </p>
+                    <div class="margin-lista">
+                        <p class="letra-pdf">Integridad: Es el comportamiento que nos hace visibles
+                            como personas rectas, leales, justas, objetivas y
+                            honestas ante la empresa y la sociedad. Una persona íntegra actúa en forma coherente con las
+                            características referidas, la normativa interna y externa aplicable, los principios y las
+                            reglas adoptados por
+                            la organización para prevenir violaciones a los estándares y expectativas éticas referidas
+                            en este código.
+                            Actuar conforme con este comportamiento nos permite afirmar que no se toleran los actos de
+                            lavado de activos, fraude, soborno y corrupción (regalos y atenciones, conflictos de
+                            interés) ni las conductas que
+                            falten a la ética.
+                        </p>
+                        <p class="letra-pdf">Responsabilidad: Es la obligación de hacer el mejor
+                            esfuerzo para alcanzar los objetivos empresariales,
+                            y garantizar el manejo eficiente de los recursos. Bajo este principio, se asumen las
+                            consecuencias de las
+                            decisiones que se adoptan, así como de las omisiones y extralimitaciones.
+
+                        </p>
+                        <p class="letra-pdf">Respeto: Es la capacidad de reconocer y aceptar las
+                            diferencias que se tienen con los demás. A partir de
+                            este principio se protegen los derechos humanos, fundamentales y sociales y se propone
+                            reconocer al
+                            otro sin distinción de sexo, orientación, raza, origen nacional o familiar, lengua,
+                            religión, opinión política o
+                            filosófica, condición económica o física. En virtud de este principio, se actúa en forma
+                            cordial, sin hacer
+                            discriminaciones ni dar malos tratos o agredir a los demás.
+                        </p>
+                    </div>
+
+                    <!--       Ver documento       -->
+                    <p class="letra-pdf bolt-pdf">Ver documento Política Antisoborno y Anticorrupción</p>
+                    <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">5.2.2 Procedimientos Específicos de Prevención.
+                    </p>
+                    <p class="letra-pdf">El Grupo Campodonico ha definido un documento<samp
+                            class="bolt-pdf letra-pdf">“Reglas y Procedimientos para Integridad en
+                            Procesos Licitatorios y Contratos administrativos”</samp> que incluye el control de todo
+                        tipo de ofertas,
+                        aprobaciones, compras, seguimientos y pagos que realice el Grupo y su personal. Dentro del mismo
+                        se
+                        encuentran definidas directivas específicas de Compliance aplicables para la Supervisión y
+                        Control de
+                        Licitaciones estatales, Evaluación de Terceros, Atenciones con Terceros y Donaciones y actos de
+                        beneficencia.
+                    </p>
+
+                    <p class="letra-pdf bolt-pdf">5.2.3 Capacitaciones periódicas del Programa de integridad
+                    </p>
+                    <p class="letra-pdf">El Grupo Campodonico, a través de los lineamientos del documento<samp
+                            class="bolt-pdf letra-pdf">“Recursos Humanos”</samp> instrumenta
+                        las medidas necesarias para identificar, planificar, ejecutar y evaluar eficacia, de las
+                        Capacitaciones
+                        periódicas relativas al Programa de Integridad aplicables en todos los niveles de la
+                        Organización.
+                        Las acciones de Capacitación programadas o no programadas son transmitidas mediante los medios
+                        de
+                        comunicación disponibles por la Organización (presencial, vía remota, etc.)
+                    </p>
+                    <p class="letra-pdf bolt-pdf">5.2.4 Análisis Periódico de Riesgo
+                    </p>
+                    <p class="letra-pdf">Mediante las directivas del procedimiento<samp
+                            class="bolt-pdf letra-pdf">“Acciones para abordar Riesgos y Oportunidades” y el
+                            “Plan de Defensa de los Alimentos”</samp> el Grupo Campodonico establece los lineamientos
+                        para realizar el
+                        análisis periódico de Riesgos en función de los Procesos, Locaciones y Funciones. Este análisis
+                        es
+                        validado por el Directorio del Grupo Campodonico y en función de los resultados del mismo, se
+                        instrumentan y gestionan las acciones para adaptar o modificar el Programa de Integridad
+                        establecido.
+
+                    </p>
+
+                    <!--      Apoyo visible al Programa de Integridad       -->
+                    <p class="letra-pdf bolt-pdf">5.2.5 Apoyo visible al Programa de Integridad por parte del
+                        Directorio.
+                    </p>
+                    <p class="letra-pdf">Mediante el presente documento, la Dirección de la Organización declara y
+                        establece el apoyo visible e
+                        inequívoco del Programa establecido. Para ello se compromete a establecerlo como parte de la
+                        cultura
+                        de la empresa y esto se verá reflejado en las acciones de seguimiento, monitoreo y
+                        capacitaciones-concientización transmitidos a todo el personal involucrado sobre las
+                        implicancias del
+                        incumplimiento de éste y los documentos que del mismo se desprenden.
+
+                    </p>
+                    <p class="letra-pdf bolt-pdf">5.2.6 Canales Internos de Denuncias Abiertos y Difundidos
+                    </p>
+                    <p class="letra-pdf">Mediante el documento<samp class="bolt-pdf letra-pdf">“Gestión de
+                            Denuncias”</samp>se definen las pautas, que estarán a disposición de los
+                        empleados de la organización, necesarias para recepcionar las denuncias anónimas sobre hechos
+                        ilícitos. Así mismo, se establecen las directivas para la revisión y control de las denuncias
+                        para su
+                        correspondiente seguimiento e investigación interna.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">5.2.7 Protección de Denunciantes
+                    </p>
+                    <p class="letra-pdf">De acuerdo al <samp class="bolt-pdf letra-pdf">Código de Ética</samp>a de la
+                        Organización y en función del documento
+                        <samp class="bolt-pdf letra-pdf">“Gestión de
+                            Denuncias”</samp>se sientan las bases para la protección del denunciante y evitar así
+                        represalias por parte de
+                        la empresa o cualquier otro afectado por la denuncia. Se instrumentan los medios para mantener,
+                        ante
+                        todo, la confidencialidad y el anonimato del denunciante (canales seguros)
+                    </p>
+                    <p class="letra-pdf bolt-pdf">5.2.8 Sistema de Investigación Interna con Sanciones.
+                    </p>
+                    <p class="letra-pdf">El Grupo Campodonico, mediante documento, establecerá un organismo que se
+                        encargará de la
+                        investigación interna de aquellos que supongan alarmas serias sobre la existencia de una
+                        violación
+                        grave al Código de Ética. Dicho Órgano de Control, contará con directivas de gestión,
+                        establecidas por
+                        el Directorio, relativas a la realización de investigaciones internas y todas las implicancias
+                        asociadas,
+                        incluso las Sanciones.
+                    </p>
+
+                    <p class="letra-pdf bolt-pdf">5.2.9 Comprobación de Integridad y Trayectoria de los Socios
+                        Comerciales
+                    </p>
+                    <p class="letra-pdf">La Organización ha establecido un procedimiento de evaluación y revisión de
+                        antecedentes <samp class="bolt-pdf letra-pdf">(Debida Diligencia de Socios
+                            Comerciales)</samp>basado en riesgos, al momento de contratar los servicios o
+                        emprender asociaciones con sus diferentes socios comerciales.
+                    </p>
+
+                    <!--      Control con el programa de Integridad       -->
+                    <p class="letra-pdf bolt-pdf">5.2.10 Control con el programa de Integridad durante los procesos de
+                        Transformación y
+                        Adquisiciones Societarias.
+                    </p>
+                    <p class="letra-pdf">El Grupo Campodonico establecerá medidas para la verificación de
+                        irregularidades, hechos ilícitos o
+                        vulnerabilidades de las personas jurídicas involucradas (Due Diligence) para éste tipo de
+                        procesos,
+                        definiendo el control de las reglas de operación y el programa de Compliance relativo.
+
+                    </p>
+
+                    <p class="letra-pdf bolt-pdf">5.2.11 Monitoreo, Evaluación y Actualización de la Efectividad del
+                        Programa de
+                        Integridad.
+
+                    </p>
+                    <p class="letra-pdf">A través de la figura del Responsable Interno del Programa, se llevará a cabo
+                        el monitoreo y evaluación
+                        de la efectividad del mismo. De ser necesario, podrá utilizarse asesoramiento externo. El Grupo
+                        Campodonico define, documentalmente, cuáles serán las medidas adoptadas para llevar a cabo dicho
+                        seguimiento y evaluación de performance del Programa.
+                        El Directorio de SA Campodónico Ltda. determina que con frecuencia mínima anual se llevará a
+                        cabo
+                        una reunión de revisión del Programa y sus distintos contenidos a fin de producir las
+                        actualizaciones
+                        necesarias que permitan la mejora continua del mismo. Para este evento serán convocados el
+                        Representante interno del Programa de Integridad, el responsable del Órgano interno de control y
+                        un
+                        miembro del Directorio. De esta reunión de revisión se dejará evidencia documental con las
+                        decisiones y
+                        conclusiones a que se arribe en la misma.
+                    </p>
+
+                    <p class="letra-pdf bolt-pdf">5.2.12 Responsable Interno del Programa de Integridad.
+                    </p>
+                    <p class="letra-pdf">El Directorio del Grupo designa al Sr. Maximiliano Rusconi y al Sr. Ricardo
+                        Campodonico como
+                        integrantes del Programa de Integridad del Grupo Campodonico. Tendrán a cargo las tareas de
+                        desarrollo, coordinación y supervisión. Contarán con los recursos y estructura necesarios para
+                        realizar
+                        los reportes, de seguimiento y cumplimento del Programa, establecidos.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">5.2.13 Cumplimiento de Exigencias Reglamentarias.
+                    </p>
+                    <p class="letra-pdf">Actualización de las exigencias reglamentarias que eventualmente puedan dictar
+                        los organismos
+                        nacionales, provinciales o municipales; sobre la actividad de la persona jurídica. Para ello el
+                        Grupo
+                        Campodonico, a través de los Responsables del Programa de Integridad, verificará y actualizará,
+                        según
+                        corresponda, los requisitos legales aplicables en la materia.
+                    </p>
+                    <p class="letra-pdf bolt-pdf">6. Registros
+                    </p>
+                    <div class="contedor-rectangulo">
+                        <div>
+                            <div class="borde borde4">
+                                <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Código del Registro</p>
+                            </div>
+                            <div class="borde borde3">
+                                <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="borde borde2 borde4 borde5">
+                                <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Nombre del Registro
+                                </p>
+                            </div>
+                            <div class="borde borde2 borde3 borde5">
+                                <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="letra-pdf bolt-pdf">7. Revisiones
+                    </p>
+                    <div class="contedor-rectangulo">
+                        <div class="borde">
+                            <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Revisó:</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Maximiliano Rusconi</p>
+                        </div>
+                        <div class="borde borde2">
+                            <p class="letra-pdf bolt-pdf letra-pdf-sinmarg">Aprobó:</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Alejandro Campodónico</p>
+                            <p class="letra-pdf letra-pdf-sinmarg">Fecha 08/03/2021</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-rectangulo-final">
+                        <p class="letra-pdf margin-lista">00</p>
+                        <p class="letra-pdf margin-lista">25/09/20</p>
+                        <p class="letra-pdf margin-lista"> Primera edición.</p>
+                    </div>
+                    <div  class="contenedor-rectangulo-final">
+                        <p class="letra-pdf margin-lista">01</p>
+                        <p class="letra-pdf margin-lista">08/03/2021</p>
+                        <p class="letra-pdf margin-lista">Se modificó el punto 5.11, determinando frecuencia de revisión
+                            del Programa de integridad
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer-contenedor">
+            <div class="cotenedor-logo-contacto">
+                <div class="footer-contenedor-chico">
+                    <a class="logochico" href="index.html">
+                        <img src="img/logo-chico.png" alt="logo chico">
+                    </a>
+                </div>
+                <div class="footer-letras">
+                    <p>Info@molinocampodonico.com.ar</p>
+                    <p>Tel: (0221) 423-0000</p>
+                </div>
+            </div>
+
+
+            <div class="iconos">
+                <a href="https://www.instagram.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg></a>
+                <p>
+                    <a href="https://www.facebook.com/molinocampodonico/"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00579d" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></a>
+                </p>
+            </div>
+
+
+        </footer>
+
+        <script src="js/modernizr.js"></script>
+    </body>
+
+
+    </footer>
 
 </html>

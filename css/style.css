@@ -901,7 +901,7 @@ footer {
 }
 
 .div-datos {
-    margin-top: 1rem;
+    margin-top: 8rem;
 }
 
 .programa-identidad {
@@ -938,6 +938,34 @@ footer {
     gap: 1.5rem;
 }
 
+.img-empresas-externas {
+    width: 24rem;
+    height: 11rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-img-empresas {
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem 0rem 7rem 0rem
+}
+
+.empresas-marg {
+    margin-top: 3rem;
+}
+
+.clabecq {
+    width: 20rem;
+}
+
+.marg-datos2 {
+    margin-left: 3rem;
+}
+
+.empresas-marg2 {
+    margin-top: 6rem;
+}
 
 /*AGRONEGOCIOS */
 
@@ -1116,6 +1144,7 @@ footer {
 .barra {
     display: flex;
     align-items: center;
+    margin-left: 4rem;
 }
 
 .iconos-hover {
@@ -1331,7 +1360,6 @@ footer {
     .elementos-derecha-semi {
         margin-left: 0rem
     }
-
 }
 
 @media (max-width: 1440px) {
@@ -1405,6 +1433,10 @@ footer {
     .contenedor-letras-emresa-r {
         display: flex;
         justify-content: center;
+    }
+
+    .contenedor-img-empresas {
+        margin: 10rem 0rem 5rem 0rem;
     }
 
     /* ------ comercio -----*/
@@ -1781,7 +1813,7 @@ footer {
     .datos2 {
         margin: -4rem;
     }
-    
+
     .soja-resp {
         margin-left: 1rem;
     }
@@ -2061,6 +2093,19 @@ footer {
     .empresa-texto {
         font-size: 4rem;
     }
+
+    .img-empresas-externas {
+        margin: 2rem 2rem 2rem 4rem;
+    }
+
+    .contenedor-img-empresas {
+        display: block;
+
+    }
+
+    .marg-datos2 {
+        margin-left: 0rem;
+    }
 }
 
 @media (max-width: px) {
@@ -2137,6 +2182,7 @@ footer {
     .resp-nav {
         margin-left: 1.5rem;
     }
+
 }
 
 @media (width >=768px) {
@@ -2156,5 +2202,148 @@ footer {
     width: 80%;
     height: 90vh;
     border-radius: 2rem;
-    margin-top: 3rem;
+    margin: 3rem 0rem 10rem;
+    border-color: var(--primario);
+    border-width: 1rem;
+
 }
+
+.contenedor-pdfs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.politica {
+    color: var(--negro);
+    font-family: var(--fuenteheading);
+}
+
+.letra-pdf {
+    font-family: var(--fuenteparrafos);
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.bolt-pdf {
+    font-weight: 800;
+}
+
+.lista1 {
+    margin-left: 4rem;
+}
+
+.firma {
+    text-align: end;
+    margin-top: 6rem;
+}
+
+.letra-pdf-firma {
+    font-family: var(--fuenteparrafos);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.letra-pdf-sinmarg {
+    margin-top: 0rem;
+}
+
+.borde {
+    padding: 3px 10px;
+    border: 3px solid;
+    width: 30rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.borde2 {
+    border-left: none;
+}
+
+.borde3 {
+    border-top: none;
+    margin-top: 0rem;
+}
+
+.borde4 {
+    margin-bottom: 0rem;
+}
+
+.borde5 {
+    width: 50rem;
+}
+
+.contedor-rectangulo {
+    display: flex;
+    margin-left: 4rem;
+}
+
+.margin-lista {
+    margin-left: 3rem;
+}
+
+.contenedor-rectangulo-final {
+    display: flex;
+}
+
+.contenedor-pdf-programa {
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+@media (max-width: 1024px) {
+
+    .contedor-rectangulo {
+        display: block;
+    }
+
+    .borde2 {
+        border-left: solid 3px;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .borde5 {
+        max-width: 30rem;
+    }
+}
+
+/* NUEVO NAV */
+
+.dropdown2 {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown-content2 a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    text-align: start;
+}
+
+.dropdown-content2 a:hover {
+    color: #FFFFFF;
+    background-color: var(--primario);
+}
+
+.margin-contenedor-pdfs {
+    margin: 2rem;
+}
+
