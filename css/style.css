@@ -914,7 +914,7 @@ footer {
 
 .boton--terciario {
     background-color: var(--primario);
-    width: 76.5rem;
+    max-width: 74rem;
     border-radius: 4rem;
     font-size: 2.4rem;
     font-weight: 400;
